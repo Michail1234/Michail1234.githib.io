@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+		<meta charset="UTF-8">
+		<title>Оформление вертикального меню</title>
+		<style>
+	
+	html {
+				background: #f0f0f0;
+			}
+			
+			.menu {
+				width: 250px;
+				background: #fff;
+			}
+			
+			.menu ul {
+				list-style-type: none;
+            }
+					
+			.menu li a {
+			    text-decoration: underline;
+			    color: #369;
+                
+			}
+			
+			.menu li a:hover {
+                background-color: white;
+			    color: #369;
+			}
+			
+			.menu li ul {
+                padding-bottom: 10px;
+                padding-left: 10px;
+			}
+			
+			.back-minus::before {
+				content: "";
+    			width: 16px; height: 16px;
+   			 	background: url('Result.png') -17px -14px;
+				float: left;
+			}
+
+			.back-plus::before {
+				content: "";
+    			width: 16px; height: 16px;
+    			background: url('Result.png') -27px -5px;
+				float: left;
+			}
+
+			.back-point::before {
+				content: "";
+    			width: 16px; height: 16px;
+   				background: url('Result.png') -17px -31px;
+				float: left;
+			}
+
+	
+	</style>
+</head>
+<body>
+	<nav class="menu">
+		<ul>
+			
+			<li class="back-minus"><a href="#">Фильмы</a>
+				<ul>
+					<li class="back-point"><a href="#">Экшн</a></li>
+					<li class="back-point"><a href="#">Мелодрамы</a></li>
+					<li class="back-point"><a href="#">Сериалы</a></li>
+					<li class="back-point"><a href="#">Семейные</a></li>
+				</ul>
+			</li>
+			<li class="back-minus"><a href="#">Музыка</a>
+				<ul>
+					<li class="back-point"><a href="#">Классика</a></li>
+					<li class="back-point"><a href="#">Джаз</a></li>
+					<li class="back-point"><a href="#">Рок</a></li>
+					<li class="back-point"><a href="#">Грандж</a></li>
+				</ul>
+			</li>
+		
+			<li class="back-minus"><a href="#">Софт</a>
+				<ul>
+					<li class="back-point"><a href="#">Графика</a></li>
+					<li class="back-point"><a href="#">3D-моделирование</a></li>
+					<li class="back-point"><a href="#">Машинопись</a></li>
+					<li class="back-point"><a href="#">Переводчики</a></li>
+				</ul>
+			</li>
+		
+			<li class="back-minus"><a href="#">Софт</a>
+				<ul>
+					<li class="back-point"><a href="#">Графика</a></li>
+					<li class="back-point"><a href="#">3D-моделирование</a></li>
+					<li class="back-point"><a href="#">Машинопись</a></li>
+					<li class="back-point"><a href="#">Переводчики</a></li>
+				</ul>
+			</li>
+		
+		</ul>
+	</nav>
+</body>
+</html>

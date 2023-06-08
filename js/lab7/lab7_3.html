@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="utf-8">
-	<title>Lab7_3</title>
+	<title>Javascript</title>
 </head>
 
 <body>
@@ -26,16 +27,22 @@
 				event.preventDefault();
 				let textarea = document.querySelector("textarea");
 				let div = document.createElement("div");
-				div.innerHTML = textarea.value;
-				textarea.parentNode.replaceChild(div, textarea);
+				if (textarea === null) {
+					console.log("Нечего сохранять!!!");
+				}
+				else {
+					div.innerHTML = textarea.value;
+					textarea.parentNode.replaceChild(div, textarea);
+				}
 			}
 			else if (event.code == 'Escape') {
 				event.preventDefault();
 				let textarea = document.querySelector("textarea");
 				let div = document.createElement("div");
-				if (text)
+				if (textarea) {
 					div.innerHTML = text;
-				textarea.parentNode.replaceChild(div, textarea);
+					textarea.parentNode.replaceChild(div, textarea);
+				}
 			}
 		});
 
